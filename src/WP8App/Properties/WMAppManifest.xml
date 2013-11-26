@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
+  <DefaultLanguage xmlns="" code="th-TH" />
+  <App xmlns="" ProductID="{e0ef0b61-79c5-473c-ad97-44a27a5e80d1}" Title="Studio" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="" Description="Independent living!" Publisher="" PublisherID="{e7d94c95-4681-45a0-a8b4-5df4e482fb9e}">
+    <IconPath IsRelative="true" IsResource="false">Images\Item-8380c321-dec0-491a-8ac2-c715b389c6ff.png</IconPath>
+    <Capabilities>
+      <Capability Name="ID_CAP_NETWORKING"/>
+      <Capability Name="ID_CAP_SENSORS"/>
+      <Capability Name="ID_CAP_WEBBROWSERCOMPONENT"/>
+      <Capability Name="ID_CAP_SPEECH_RECOGNITION" />
+      <Capability Name="ID_CAP_PHONEDIALER" />
+      <Capability Name="ID_CAP_LOCATION" />
+      <Capability Name="ID_CAP_PROXIMITY" />
+      <Capability Name="ID_CAP_IDENTITY_USER" />
+      <Capability Name="ID_CAP_MAP" />
+    </Capabilities>
+    <Tasks>
+      <DefaultTask Name="_default" NavigationPage="View/Rockmusic_Videos.xaml" ActivationPolicy="Resume"/>
+    </Tasks>
+    <Tokens>
+      <PrimaryToken TokenID="MyDoWapp" TaskName="_default">
+	    <TemplateFlip>
+          <SmallImageURI IsRelative="true" IsResource="false">Images/TileSmallBackground-b4ffc5f2-dcdd-4e1f-ad34-10e9ffd57a1f.jpg</SmallImageURI>
+		  <Count>0</Count>
+		  <BackgroundImageURI IsRelative="true" IsResource="false">Images/Tile-d02356e2-0420-4543-846d-6474b4b09a00.jpg</BackgroundImageURI>
+          <Title>Studio</Title>
+          <BackContent></BackContent>
+	      <BackBackgroundImageURI IsRelative="true" IsResource="false">Images/Tileback-c11dbc60-7c3c-4634-a9d7-818a42db08a0.jpg</BackBackgroundImageURI>
+          <BackTitle>Studio</BackTitle>
+		  		  <LargeBackgroundImageURI IsRelative="true" IsResource="false">Images/Tile-d02356e2-0420-4543-846d-6474b4b09a00.jpg</LargeBackgroundImageURI>
+		  <LargeBackBackgroundImageURI IsRelative="true" IsResource="false">Images/Tileback-c11dbc60-7c3c-4634-a9d7-818a42db08a0.jpg</LargeBackBackgroundImageURI>
+ 
+          <DeviceLockImageURI IsRelative="true" IsResource="false"></DeviceLockImageURI>
+          <HasLarge>True</HasLarge>		
+        </TemplateFlip>
+      </PrimaryToken>
+    </Tokens>
+    <Extensions>
+      <Extension ExtensionName="LockScreen_Notification_IconCount" ConsumerID="{111DFF24-AA15-4A96-8006-2BFF8122084F}" TaskID="_default" />
+      <Extension ExtensionName="LockScreen_Notification_TextField" ConsumerID="{111DFF24-AA15-4A96-8006-2BFF8122084F}" TaskID="_default" />
+      <Extension ExtensionName="LockScreen_Background" ConsumerID="{111DFF24-AA15-4A96-8006-2BFF8122084F}" TaskID="_default" />
+    </Extensions>
+    <ScreenResolutions>
+      <ScreenResolution Name="ID_RESOLUTION_WVGA" />
+      <ScreenResolution Name="ID_RESOLUTION_WXGA" />
+      <ScreenResolution Name="ID_RESOLUTION_HD720P" />
+    </ScreenResolutions>
+  </App>
+</Deployment>
